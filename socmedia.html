@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Social Media Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #ff7e5f, #feb47b); /* Attractive gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 80%;
+            text-align: center;
+        }
+
+        .social-media-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .social-media-buttons a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50%;
+            font-size: 2rem;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s ease;
+            position: relative;
+        }
+
+        .whatsapp {
+            background-color: #07ee2e;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp:hover {
+            background-color: #09e309;
+            transform: scale(1.1);
+        }
+
+        .git {
+            background-color:black;
+            animation: bounce 1.5s infinite;
+        }
+
+        .git:hover {
+            background-color: rgb(225, 225, 32);
+            transform: scale(1.1);
+        }
+
+        .linkedin {
+            background-color: #0077b5;
+            animation: shake 1s infinite;
+        }
+
+        .linkedin:hover {
+            background-color: #0854f7;
+            transform: scale(1.1);
+        }
+
+        .mail {
+            background-color: rgb(255, 239, 8);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .mail:hover {
+            background-color: rgb(175, 116, 5);
+            transform: scale(1.1);
+        }
+
+        /* Animation for whatsapp (Pulse) */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Animation for snapchat (Bounce) */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Animation for LinkedIn (Shake) */
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            75% {
+                transform: translateX(-5px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation for Instagram (FadeIn) */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .navigation {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background-color: #ef233c;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: #d90429;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Connect With Me</h2>
+
+    <div class="social-media-buttons">
+        <!-- Social Media Links -->
+        <a href="https://wa.me/+919604791430" class="whatsapp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://github.com/chavan-sanika" class="git" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sanika-chavan-7b90b8300/" class="linkedin" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:chavansanika01@gmail.com" class="mail" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="navigation">
+        <a href="./proj.html" class="btn">Previous</a>
+        <a href="./thanku.html" class="btn">Next</a>
+    </div>
+
+</body>
+
+</html>
